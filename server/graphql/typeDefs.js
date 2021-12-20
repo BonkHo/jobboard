@@ -1,6 +1,6 @@
 const gql = require("graphql-tag");
 
-module.export = gql`
+module.exports = gql`
 	type Job {
 		id: ID!
 		title: String!
@@ -18,5 +18,9 @@ module.export = gql`
 		email: String!
 		password: String!
 		createdAt: String!
+	}
+
+	type Query {
+		sayHi: String!
 	}
 `;
